@@ -1,3 +1,23 @@
+.vscode
+dist/*
+!dist/keepme
+
+#Ignore anything in deps
+deps/*
+
+#But for the top level directories
+!deps/keepme 
+!deps/SDL3-3.2.0
+!deps/SDL3_image-3.2.0 
+
+# However do not include the entirity of the file structure and some documentation of whats supposed to be there
+deps/SDL3-3.2.0/*
+!deps/SDL3-3.2.0/keepme
+
+#Repeat exclusion pattern for other deps
+deps/SDL3_image-3.2.0/*
+!deps/SDL3_image-3.2.0/keepme
+
 # Prerequisites
 *.d
 
