@@ -4,6 +4,7 @@ dist/*
 
 #Ignore anything in deps
 deps/*
+build
 
 #But for the top level directories
 !deps/keepme 
